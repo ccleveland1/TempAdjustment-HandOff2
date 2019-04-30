@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR Temp Adjustment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="search">
+      <input id="textfield" name="textfield" type="text" placeholder=" Invoice #/Customer Name/Corp ID">
+      <div class="vl"></div>
+      <div id="title">View:</div>
+      <select id="dropdown" name="dropdown" type="text" placeholder=" Last 30 Days">
+        <option value="Last 30 Days">Last 30 Days</option>
+        <option value="Last 2 Months">Last 2 Months</option>
+        <option value="Last 3 Months">Last 3 Months</option>
+      </select>
+          
+      <button id="go" type="submit" value="Go">Go</button>
+
+    </div>
+
+  </div>
+  <div class="outer-container">
+    <table class="customer-data" id="table-head" cellpadding="0" cellspacing="0" width="100%" border="0" >
+      <thead>
+        <tr>
+          <th>Invoice #</th>
+          <th class="select">Invoice Date</th>         
+          <th>Customer Name</th>
+          <th>Corporate ID</th>
+          <th>Amount ($)</th>
+          <th>Balance ($)</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>37-0319634</td>
+          <td>11/17/2018</td>
+          <td>DELTA DENTAL</td>
+          <td>00910054001</td>
+          <td>1,644.75</td>
+          <td>1,644.75</td>  
+          <td class="fas fa-file-alt"></td>    
+        </tr>
+        <tr>
+          <td>18-0319609</td>
+          <td>11/17/2018</td>
+          <td>Delta Hardwood Floors</td>
+          <td>CA910054000</td>
+          <td>557.75</td>
+          <td>557.55</td>  
+          <td class="fas fa-file-alt"></td>  
+        </tr>
+        <tr>
+          <td>20-0349571</td>
+          <td>11/17/2018</td>
+          <td>Universal Delta Tours Inc</td>
+          <td>0094570742630</td>
+          <td>2,841.00</td>
+          <td>2,841.00</td>  
+          <td class="fas fa-file-alt"></td>   
+        </tr>
+        <tr>
+          <td>72-0319553</td>
+          <td>11/15/2018</td>
+          <td>Delta Billing Solutions</td>
+          <td>003542480056</td>
+          <td>1,404.55</td>
+          <td>1,404.55</td>  
+          <td class="fas fa-file-alt"></td>   
+        </tr>
+        <tr>
+          <td>48-0319511</td>
+          <td>11/15/2018</td>
+          <td>Group Delta Consultants</td>
+          <td>000266590002</td>
+          <td>675.00</td>
+          <td>675.00</td> 
+          <td class="fas fa-file-alt"></td>    
+        </tr>
+        <tr>
+          <td>65-0319511</td>
+          <td>11/13/2018</td>
+          <td>Group Delta</td>
+          <td>000266590005</td>
+          <td>954.00</td>
+          <td>954.00</td>   
+          <td class="fas fa-file-alt"></td>    
+        </tr>
+        <tr>
+          <td>34-0319457</td>
+          <td>11/13/2018</td>
+          <td>Disney c/o Zero Chaos</td>
+          <td>009102993000</td>
+          <td>3,025.00</td>
+          <td>3,025.00</td>  
+          <td class="fas fa-file-alt"></td>   
+        </tr>
+        <tr>
+          <td>15-0319436</td>
+          <td>11/13/2018</td>
+          <td>TAD RESOURCES/DISNEYLAND</td>
+          <td>CA0160890019</td>
+          <td>1,148.00</td>
+          <td>1,148.00</td>  
+          <td class="fas fa-file-alt"></td>   
+        </tr>
+      </tbody>
+    </table>
+ </div>  
+
+
+
+
+
+<div class="outer-container">
+
+    <table class="invoice-data" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <thead>
+      <tr class="invoice-name">
+        <th colspan="7"><strong>Delta Billing Solutions</strong> - Invoice <span class="invoice-number">72-0319553</span></th>
+        <th>Amount ($)</th>
+        <th>Adj Amount ($)</th>
+      </tr>
+
+      <tr class="invoice-summary">
+        <th colspan="7">Invoice Date 11/15/2017  | 003542480056</th>
+        <th>1,404.55</th>
+        <th>1,160.55</th>
+      </tr>
+
+      <tr class="header-row">
+        <th>Employee Name</th>
+        <th>Job Title</th>
+        <th>Charge</th>
+        <th>Unit/Hours</th>
+        <th>Bill Rate ($)</th>
+        <th>Tax ($)</th>    
+        <th>State</th> 
+        <th>Amount ($)</th> 
+        <th>Adjust</th> 
+      </tr>
+    </thead>
+      <tbody>
+      <tr class="data-row">
+        <td>Flythe, Zandra</td>
+        <td>Receptionist</td>
+        <td>STD</td>
+        <td>40.0</td>
+        <td>18.00</td>
+        <td></td>    
+        <td></td>
+        <td>720.00</td>
+         <td class="text-right">
+          <i class="fas fa-adjust fa-adjust-container"></i>
+        </td> 
+      </tr>
+
+      <tr class="dropdown-row">
+         <td><strong>Adjustment Reason:</strong></td>
+         <td class="no-hover" colspan="2"> <select class="adjustment-reason" id="dropdown" name="dropdown" type="text" placeholder=" Select Reason">
+        <option value="Select Reason">Incorrect Hours</option>
+        <option value="Last 2 Months">Incorrect Charge</option>
+        <option value="Last 3 Months">Unit/Hours</option>
+        </select>
+        </td>
+        <td colspan="4"><input class="unit-hours" id="" name="textfield" type="text" placeholder="32.00 x">
+        </td>
+        <td>576.00</td>
+         <td>
+          <i class="fas fa-eraser fa-eraser-container"></i>
+        </td> 
+      </tr>
+
+    <tr>
+      <td>Flythe, Zandra</td>
+      <td>Receptionist</td>
+      <td>OVR</td>
+      <td>1.18</td>
+      <td>27.00</td>
+      <td></td>    
+      <td></td>
+      <td>3195</td>
+       <td>
+          <i class="fas fa-eraser fa-eraser-container"></i>
+      </td> 
+    </tr>
+
+    <tr>
+      <td>Flythe, Zandra</td>
+      <td>Receptionist</td>
+      <td>ACAHC*</td>
+      <td>41.18</td>
+      <td>0.54</td>
+      <td></td>    
+      <td></td>
+      <td>22.24</td>
+       <td>
+          <i class="fas fa-eraser fa-eraser-container"></i>
+        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>Waldner, Amanda</td>
+      <td>Receptionist</td>
+      <td>STD</td>
+      <td>34.00</td>
+      <td>18.00</td>
+      <td>48.96</td>    
+      <td>CA</td>
+      <td>612.00</td> 
+      <td>
+          <i class="fas fa-eraser fa-eraser-container"></i>
+        
+      </td>  
+    </tr>
+
+    <tr>
+      <td>Waldner, Amanda</td>
+      <td>Receptionist</td>
+      <td>ACAHC*</td>
+      <td>34.00</td>
+      <td>0.54</td>
+      <td></td> 
+      <td></td>
+      <td>18.36</td> 
+      <td>
+          <i class="fas fa-eraser fa-eraser-container"></i>
+        
+      </td>  
+    </tr>
+
+    <tr>
+      <td><strong>Invoice Adjustment Reason:</strong></td>
+      <td  class="no-hover" colspan="2"><select class="adjustment-reason" id="dropdown" name="dropdown" type="text" placeholder="Select Reason">
+      <option value="Select Reason">Select Reason</option>
+      <option value="Last 2 Months">Last 2 Months</option>
+      <option value="Last 3 Months">Last 3 Months</option>
+      </select>
+      </td>
+      <td class="additional-adjustment" colspan="6">Additional Adjustment ($): <input class="additional-information" id="" name="textfield" type="text" placeholder=" Invoice #/Customer Name/Corp ID">
+      </td>
+    </tr>
+  </tbody>
+    </table>
+  </div>
+
+  <div class="d-tbl w-100">
+    <div class="d-tbl-row">
+        <div class="d-tbl-cell vertical-top"> 
+    <div class="border-box-notes">     
+    <div class="client-wants"><div>Client Wants:</div>
+        <select class="final-choices1" id="dropdown" name="dropdown" type="text" placeholder=" Select Reason">
+                <option value="Select Reason">Select Reason</option>
+                <option value="Last 2 Months">Last 2 Months</option>
+                <option value="Last 3 Months">Last 3 Months</option>
+              </select>
+      </div>
+      <div class="client-notes"><div>Notes:</div>
+          <textarea class="final-choices" rows="4" cols="80" name="comment" form="usrform">Enter text here...</textarea>
+      </div>
+
+    </div>
+</div>
+
+      
+        <div class="d-tbl-cell vertical-top w-40">
+
+<table class="adjustment-results">
+  <tbody class="line-height-total">
+        <tr>
+          <td class="align-right">Total:</td>
+          <td class="align-right">$1,404.55</td>
+        </tr>
+        <tr>
+          <td class="align-right">Adjustments (-):</td>
+          <td class="align-right">$244.00</td>
+        </tr> 
+        <tr>
+         <td class="align-right"><strong>Adjustment Requested:</strong></td>
+         <td class="align-right"><strong>$1,160.55</strong></td>
+        </tr> 
+      </tbody>
+      </table>
+
+        </div>
+    </div>
+  </div>
+
+<div class="disclaimer"> <p>Final adjustment total may vary from this request. Any wage change could trigger applicable ACA, Overtime, Sales Tax, or other changes. Final amount due will appear in re-issued invoice. Previously paid balance may not be reflected here.</p> </div>
+<div class="buttons">
+  <button class="request-approval" type="button" onclick="">Request Approval
+  </button>
+
+  <button class="reset" type="button" onclick="">Reset
+  </button>
+</div>
+
+<div class="outer-notes-container">
+  <div class="notes"><strong>Notes</strong></div>
+
+  <div class="note-section-title"><strong>AE Notes</strong></div>
+    <div class="notes-container">
+      <div class="credential"><strong>rragpa</strong></div>
+      <div>Client confirmed changes</div>
+      <div>Created by rragpa on 4/1/2019 1:17:27 PM</div>
+      <hr id="box-divider">
+      <div class="credential"><strong>rragpa</strong></div>
+      <div>Client confirmed changes</div>
+      <div>Created by rragpa on 4/1/2019 1:17:27 PM</div>
+    </div>
+
+    <div class="note-section-title"><strong>Manager Notes</strong></div>
+    <div class="notes-container">
+      <div class="credential"><strong>dthomas</strong></div>
+      <div>Approved</div>
+      <div>Created by dthomas on 4/1/2019 1:17:27 PM</div>
+    </div>
+
+    <div class="note-section-title"><strong>AR Notes</strong></div>
+    <div class="notes-container">
+      <div class="credential"><strong>hnormand</strong></div>
+      <div>Adjusments Completed</div>
+      <div>Created by dthomas on 4/1/2019 1:17:27 PM</div>
+    </div>
+</div>
+
+</body>
+</html>

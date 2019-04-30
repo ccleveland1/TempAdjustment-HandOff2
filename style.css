@@ -1,0 +1,376 @@
+.outer-container{
+  position: relative;
+  margin-left:5%;
+  margin-right:5%;
+
+}
+
+.customer-data {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    width: 100%;
+
+  }
+
+  .customer-data td{
+    width: 25%;
+  }
+
+  .invoice-data td, .invoice-data th,  
+  .customer-data td, .customer-data th {
+    padding: 8px;
+  }
+
+
+  
+  .customer-data tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .customer-data tr:hover
+  {background-color: #455D7D;}
+
+  .customer-data tr:hover td.fa-file-alt{
+    color: #fff;
+  }
+
+
+.invoice-data tr:hover i.fa-eraser {color: #FFFFFF;}
+
+.invoice-data tr:hover i.fa-adjust {color: #FFFFFF;}
+
+.invoice-data tr:hover td.no-hover{color:black;}
+
+.customer-data tr:hover {color: #FFFFFF;}
+
+.customer-data tr .fa-file-alt:hover {color: #FFFFFF;}
+
+
+
+.fa-file-alt{
+    color: #006699;;
+  }
+ 
+.search{
+  padding-bottom: 3%;
+  margin-left:5%;
+  padding-top: 3%;
+}
+.search #textfield{
+  width: 20%;
+  height: 23px;
+  left: 55px;
+  top: 113px;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+}
+
+.search .vl{
+  border-left: 2px solid #666666;
+  height: 16px;
+  left: 320px;
+  top: 117px;
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+.search #title{
+  width: 34px;
+  height: 17px;
+  font-size:  15px;
+  display: inline-block;
+}
+
+.search #dropdown{
+  width: 20%;
+  height: 23px;    
+}
+.search #go{
+  width: 3%;
+  height: 25px;
+  left: 646px;
+  top: 112px;
+  background: linear-gradient(360deg, #E5E5E5 17.74%, rgba(229, 229, 229, 0) 88%);
+  border: 1px solid #D5D5D7;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+  .customer-data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7995BB;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+  }
+  
+  .invoice-data tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .invoice-data tbody tr:hover {background-color: #455D7D;}
+
+  .invoice-data tbody tr:hover {color: #FFFFFF;}
+
+.invoice-data{
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.invoice-name{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7995BB;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.invoice-summary{
+  height:   25px;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom:   2px;
+}
+
+.header-row{
+  border-top: 1px solid #CCCCCC;
+  height:25px;
+  background-color: #7995BB;
+  color: white;
+}
+
+.text-right{
+ text-align: right;
+}
+.fa-adjust-container{
+  color:black;
+  padding-right:  25%;
+}
+
+.fa-eraser-container{
+  color: black;
+  display: inline-block;
+  padding-right: 8px;
+}
+
+.adjustment-reason{
+  width: 200px;
+  height: 25px;
+  border: 1px solid #666666;
+  box-sizing: border-box;   
+}
+.additional-information{
+  width:250px;
+  height: 25px;
+  border: 1px solid #666666;
+  box-sizing: border-box; 
+}
+.unit-hours{
+  background: #FFFFFF;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  width: 66px;
+  height: 25px;
+}
+
+.request-approval{
+  width: 325px;
+  height: 40px;
+  background: #D6F1F9;
+  border: 1px solid #A6CAE3;
+  color: #73869D;
+  margin-right: 2%;
+  font-size: 20px;
+}
+.reset{
+  width:325px;
+  height:40px;
+  background: #D6F1F9;
+  border: 1px solid #A6CAE3;
+  color: #73869D;
+  margin-left: 2%;
+  font-size: 20px;
+}
+.buttons{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+
+.text-area-container{
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  width: 55%;
+  display:inline-block;
+  font-size: 14pt;
+  line-height: 28.5px;
+  margin-left: 5%;
+  padding-top: 1%
+  padding-top: 1%;
+}
+.final-choices{
+border: 1px solid #666666;
+}
+.final-choices1{
+  display: inline-block;
+  width:200px;
+  height:25px;
+  border: 1px solid #666666;
+}
+
+.w-100{
+  width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.w-60{
+  width: 55%;
+}
+
+.w-40{
+  width: 35%;
+}
+
+.d-tbl{
+    display: table;  
+}
+
+.d-tbl-row{
+  display: table-row;
+}
+
+.d-tbl-cell{
+  display: table-cell;
+}
+
+.vertical-top{
+  vertical-align: top;s
+}
+
+
+.client-wants{
+  display:inline-block;
+  padding-bottom:2%;
+}
+
+.border-box-notes{
+  border: 1px solid #666666;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left:4%;
+  height:225px;
+  }
+
+/* Adjustment Result Section */
+
+.adjustment-results-container{
+  display: inline-block;
+  font-size:15pt;
+}
+.adjustment-results{
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  width: 100%;
+  display:inline-block;
+  padding-top: 12.5%;
+  padding-bottom: 10%;
+  padding-left: 40%;
+  height:225px;
+}
+
+.align-right{
+  text-align: right;
+}
+
+
+
+.disclaimer {
+  margin-left:5%;
+  margin-right:5%;
+  width:90%;
+  margin-top: 1%;
+  font-size: 22px;
+  text-align: center;
+}
+.line-height-total{
+  line-height:250%;
+}
+
+
+.outer-notes-container{
+  margin-bottom: 20%;
+  width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+  line-height: 2;
+
+}
+.notes{
+  font-size: 18px;
+  border-bottom: 2px solid #A6CAE3;
+  margin-bottom: 5%;
+}
+.notes-container{
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 5%;
+  font-size: 16px;
+}
+
+.note-section-title{
+  margin-left:1%;
+  font-size:16px;
+}
+
+#box-divider{
+  height: 3px;
+  color: black;
+  width:95%;
+}
+.notes-container div{
+  margin-left: 1%;
+}
+
+hr{
+  height: 2px;
+  color: black;
+  width: 95%;
+}
+
+.bottom-container{
+  display: inline-block;
+}
+
+
+
+
+/*      test */
+
+table {
+ /* When set to 'fixed', all columns that do not have a width applied will get the remaining space divided between them equally */
+ table-layout: fixed;
+}
+
+
+/* Stylistic improvements from here */
+
+
+table .customer-data{
+  width: 100%;
+}
+
+
